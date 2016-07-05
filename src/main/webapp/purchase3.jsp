@@ -32,6 +32,6 @@
     </c:forEach>
 </table>
 <spring:url value="/products" var="prod" />
-<button onclick="location.href='${prod}'">All products</button>
+<button onclick="location.href='${prod}'">Return to products</button>
 </body>
 </html>

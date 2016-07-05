@@ -17,13 +17,16 @@
 <form:form method="POST" action="/booking/${product.productId}" modelAttribute="purcha">
         <h1></h1>
         <label>Quantity</label>
-        <form:input path="quantity"/>
+        <form:input type="number" path="quantity" min="1" max="200" autofocus="true"/>
 
         <h1></h1>
         <div>
             <input type="submit" value="Buy"/>
+                <spring:url value="/products" var="prod" />
+                <button onclick="location.href='${prod}'">Cancel</button>
         </div>
 
 </form:form>
+
 </body>
 </html>
